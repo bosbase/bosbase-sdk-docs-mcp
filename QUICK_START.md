@@ -1,6 +1,56 @@
 # Quick Start - Publishing Checklist
 
-A quick checklist for publishing your MCP service to npm and GitHub.
+A quick checklist and step-by-step guide for publishing your MCP service to npm and GitHub.
+
+## Quick Publishing Steps
+
+### 1. Update package.json
+
+- Add your author info
+- Update repository URL with your GitHub username
+
+### 2. Ensure docs are copied
+
+```bash
+cp ../js-sdk/docs/*.md docs/js-sdk/
+cp ../dart-sdk/docs/*.md docs/dart-sdk/
+cp ../SDK_DOCUMENTATION.md docs/
+```
+
+### 3. Build and test
+
+```bash
+npm install
+npm run build
+npm pack  # Test what will be published
+```
+
+### 4. Initialize Git and push
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+# Create repo on GitHub first, then:
+git remote add origin https://github.com/yourusername/bosbase-sdk-docs-mcp.git
+git push -u origin main
+```
+
+### 5. Publish to npm
+
+```bash
+npm login
+npm publish --access public
+```
+
+### 6. Create GitHub release
+
+```bash
+git tag -a v1.0.0 -m "Release v1.0.0"
+git push origin v1.0.0
+```
+
+For detailed instructions, see [PUBLISHING.md](./PUBLISHING.md).
 
 ## Pre-Publishing Checklist
 

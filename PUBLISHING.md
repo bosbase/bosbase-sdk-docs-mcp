@@ -2,6 +2,20 @@
 
 This guide covers how to publish the BosBase SDK Documentation MCP service to npm and GitHub.
 
+## Quick Publishing Steps
+
+If you're ready to publish right away, here's a quick summary:
+
+1. **Update package.json**: Add your author info and repository URL
+2. **Copy docs**: `cp ../js-sdk/docs/*.md docs/js-sdk/ && cp ../dart-sdk/docs/*.md docs/dart-sdk/ && cp ../SDK_DOCUMENTATION.md docs/`
+3. **Build and test**: `npm install && npm run build && npm pack`
+4. **Initialize Git**: `git init && git add . && git commit -m "Initial commit"`
+5. **Create GitHub repo** and push: `git remote add origin <your-repo-url> && git push -u origin main`
+6. **Publish to npm**: `npm login && npm publish --access public`
+7. **Create release**: `git tag -a v1.0.0 -m "Release v1.0.0" && git push origin v1.0.0`
+
+For detailed instructions on each step, continue reading below.
+
 ## Prerequisites
 
 1. **npm account**: Sign up at [npmjs.com](https://www.npmjs.com/signup)

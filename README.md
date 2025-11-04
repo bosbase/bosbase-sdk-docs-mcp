@@ -4,6 +4,18 @@ This MCP (Model Context Protocol) service provides access to BosBase JavaScript 
 
 **Note:** This is a self-contained MCP service. All documentation files are included in the `mcp/docs/` directory.
 
+## Quick Publishing
+
+To publish this service:
+
+1. Update `package.json` with your info and repository URL
+2. Copy docs: `cp ../js-sdk/docs/*.md docs/js-sdk/ && cp ../dart-sdk/docs/*.md docs/dart-sdk/ && cp ../SDK_DOCUMENTATION.md docs/`
+3. Build: `npm install && npm run build`
+4. Publish: `npm login && npm publish --access public`
+5. Create GitHub release: `git tag -a v1.0.0 -m "Release v1.0.0" && git push origin v1.0.0`
+
+See [QUICK_START.md](./QUICK_START.md) or [PUBLISHING.md](./PUBLISHING.md) for detailed instructions.
+
 ## Features
 
 - **Resources**: Exposes all SDK documentation files as MCP resources
@@ -158,18 +170,18 @@ List all available SDK documentation resources.
 Available documentation topics for both JS and Dart SDKs:
 
 - `collections` - Collection and record management
-- `api-rules` - API rules and filter syntax
-- `authentication` - Authentication methods (password, OTP, OAuth2, MFA)
-- `files` - File upload and handling
-- `file-api` - File API for downloads and thumbnails
-- `relations` - Relation fields and expand functionality
-- `api-records` - CRUD operations and record management
-- `realtime` - Real-time subscriptions and SSE
-- `collection-api` - Collection management API
-- `logs-api` - Log viewing and filtering
-- `crons-api` - Cron job management
-- `backups-api` - Backup operations
-- `health-api` - Health status checks
+  - `api-rules` - API rules and filter syntax
+  - `authentication` - Authentication methods (password, OTP, OAuth2, MFA)
+  - `files` - File upload and handling
+  - `file-api` - File API for downloads and thumbnails
+  - `relations` - Relation fields and expand functionality
+  - `api-records` - CRUD operations and record management
+  - `realtime` - Real-time subscriptions and SSE
+  - `collection-api` - Collection management API
+  - `logs-api` - Log viewing and filtering
+  - `crons-api` - Cron job management
+  - `backups-api` - Backup operations
+  - `health-api` - Health status checks
 
 ## Development
 
@@ -194,6 +206,7 @@ mcp/
 ├── src/
 │   └── index.ts          # Main MCP server implementation
 ├── dist/                 # Compiled JavaScript (generated)
+├── docs/                 # SDK documentation files
 ├── package.json
 ├── tsconfig.json
 └── README.md
