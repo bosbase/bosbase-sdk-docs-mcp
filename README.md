@@ -4,18 +4,6 @@ This MCP (Model Context Protocol) service provides access to BosBase JavaScript 
 
 **Note:** This is a self-contained MCP service. All documentation files are included in the `mcp/docs/` directory.
 
-## Quick Publishing
-
-To publish this service:
-
-1. Update `package.json` with your info and repository URL
-2. Copy docs: `cp ../js-sdk/docs/*.md docs/js-sdk/ && cp ../dart-sdk/docs/*.md docs/dart-sdk/ && cp ../SDK_DOCUMENTATION.md docs/`
-3. Build: `npm install && npm run build`
-4. Publish: `npm login && npm publish --access public`
-5. Create GitHub release: `git tag -a v1.0.0 -m "Release v1.0.0" && git push origin v1.0.0`
-
-See [QUICK_START.md](./QUICK_START.md) or [PUBLISHING.md](./PUBLISHING.md) for detailed instructions.
-
 ## Features
 
 - **Resources**: Exposes all SDK documentation files as MCP resources
@@ -57,35 +45,6 @@ Or if installed globally, you can use `npm root -g` to find the global node_modu
 }
 ```
 
-### From Source
-
-## Setup
-
-### 1. Copy Documentation Files
-
-Before using the service, copy the SDK documentation files into the `mcp/docs/` directory. See [COPY_DOCS.md](./COPY_DOCS.md) for detailed instructions.
-
-Quick copy (from project root):
-```bash
-cp js-sdk/docs/*.md mcp/docs/js-sdk/
-cp dart-sdk/docs/*.md mcp/docs/dart-sdk/
-cp SDK_DOCUMENTATION.md mcp/docs/
-```
-
-### 2. Install Dependencies
-
-```bash
-cd mcp
-npm install
-```
-
-### 3. Build
-
-```bash
-npm run build
-```
-
-## Usage
 
 ### As an MCP Server
 
