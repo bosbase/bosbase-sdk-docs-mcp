@@ -4,3 +4,6 @@ dist/
 .DS_Store
 .env
 *.tsbuildinfo
+PUBLISHING.md
+QUICK_START.md
+COPY_DOCS.md
