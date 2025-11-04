@@ -242,7 +242,7 @@ git push origin v1.0.0
 
 ### 6.2 Create Release on GitHub
 
-1. Go to your repository: `https://github.com/yourusername/bosbase-sdk-docs-mcp`
+1. Go to your repository: `https://github.com/bosbase/bosbase-sdk-docs-mcp`
 2. Click "Releases" → "Create a new release"
 3. Choose tag: `v1.0.0`
 4. Title: `v1.0.0`
@@ -308,7 +308,7 @@ jobs:
 
 ### 7.2 Set Up NPM Token Secret
 
-1. Generate npm token: https://www.npmjs.com/settings/yourusername/tokens
+1. Generate npm token: https://www.npmjs.com/settings/bosbase/tokens
 2. Create classic token with "Automation" type
 3. Go to GitHub repo → Settings → Secrets and variables → Actions
 4. Add secret: `NPM_TOKEN` with your npm token value

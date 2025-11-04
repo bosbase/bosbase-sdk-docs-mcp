@@ -172,5 +172,4 @@ mcp/
 ```
 
 ## License
-
 MIT

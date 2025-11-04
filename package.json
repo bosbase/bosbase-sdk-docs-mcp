@@ -1,6 +1,6 @@
 {
   "name": "@bosbase/sdk-docs-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP service for BosBase JS and Dart SDK documentation",
   "type": "module",
   "main": "dist/index.js",
