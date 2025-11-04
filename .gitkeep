@@ -1,0 +1,5 @@
+# This file ensures the docs directory structure is tracked in git
+# Documentation files should be placed in:
+# - docs/js-sdk/*.md
+# - docs/dart-sdk/*.md
+# - docs/SDK_DOCUMENTATION.md

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "bosbase-sdk-docs": {
+      "command": "node",
+      "args": ["/absolute/path/to/bosbase/mcp/dist/index.js"],
+      "description": "BosBase JavaScript and Dart SDK Documentation"
+    }
+  }
+}

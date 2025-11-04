@@ -1,0 +1,34 @@
+# Source files
+src/
+tsconfig.json
+*.ts
+!*.d.ts
+
+# Development files
+*.log
+.DS_Store
+.env
+*.tsbuildinfo
+.npm/
+
+# Git
+.git/
+.gitignore
+
+# Documentation that's not needed in package
+SETUP.md
+COPY_DOCS.md
+PUBLISHING.md
+mcp-config-example.json
+
+# Test files (if you add tests later)
+test/
+tests/
+*.test.ts
+*.spec.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
